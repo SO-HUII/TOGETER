@@ -29,6 +29,7 @@
 
 body {
     font-family: 'netmarbleB';
+    background-color: var(--background-color);
 }
 
 ul {
@@ -44,6 +45,10 @@ a{
     color: var(--black-color);
 }
 
+.logo a {
+    color: var(--black-color);
+}
+
 button,
 button:focus {
     border: none;
@@ -52,13 +57,13 @@ button:focus {
 
 }
 
+
 /* Header */
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 50px 20px 8px 20px;
-    background-color: var(--background-color);
     color: var(--black-color);
 }
 
@@ -74,4 +79,45 @@ header .logo {
 
 .menu li{
     padding: 8px 12px;
+}
+
+
+/* TextBox */
+
+.TextBox {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.TextBox .communityBox {
+    background-color: var(--white-color);
+    width: 450px;
+    height: 305px;
+    margin: 20px;
+}
+
+.TextBox .randomAndNotice {
+    flex-direction: column;
+}
+
+.TextBox .randomBox {
+    background-color: var(--white-color);
+    width: 225px;
+    height: 150px;
+    margin: 5px;
+}
+
+.TextBox .notice {
+    background-color: var(--white-color);
+    width: 225px;
+    height: 150px;
+    margin: 5px;
+}
+
+
+/* Translation And Community */
+
+.TranslationAndCommunity {
+    background-color: var(--light-purple-color);
 }
