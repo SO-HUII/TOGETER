@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Color */
+
+    --background-color: #F0F4F5;
+    --white-color: #ffffff;
+    --black-color: #140a00;
+    --light-black-color: #4E425C;
+    --blue-color: #7EA0E0;
+    --pink-color:#FDBCE1;
+    --grey-dark-color:#B0A8B9;
+    --grey-light-color: #D9D9D9;
+    --light-purple-color: #E1D2F2;
+    --dark-purple-color: #C8A0F5;
+    --brown-color: #B1895E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'netmarbleB';
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey-light-color);
+}
+
+.LoginAndSignup a {
+    color: var(--black-color);
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px 8px 20px;
+    background-color: var(--background-color);
+    color: var(--black-color);
+}
+
+header .logo {
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li{
+    padding: 8px 12px;
+}
