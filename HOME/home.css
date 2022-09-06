@@ -120,4 +120,72 @@ header .logo {
 
 .TranslationAndCommunity {
     background-color: var(--light-purple-color);
+    margin-bottom: 30px;
+}
+
+
+/* About us */
+
+.AboutUsTitle {
+    font-size: 25px;
+    margin: 50px;
+    margin-bottom: 60px;
+}
+
+img {
+    width: 250px;
+    height: 250;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.item {
+    display: flex;
+    margin: 0px 0px 40px 0px;
+}
+
+.item .info {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px 40px 40px;
+    margin-top: 20px;
+}
+
+.item .info .name {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.item .info .expla {
+    font-size: 12px;
+    padding: 10px 0px 0px 0px;
+}
+
+.item .info .expla p {
+    padding: 10px 0px 10px 0px;
+}
+
+/* Copyright And SNS */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.copyright {
+    display: flex;
+    margin-right: 20px;
+}
+
+.actions{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px 20px 20px;
+
+}
+
+.actions li {
+    padding: 0px 3px 0px 7px;  
 }

@@ -75,3 +75,28 @@ header .logo {
 .menu li{
     padding: 8px 12px;
 }
+
+/* Copyright And SNS */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.copyright {
+    display: flex;
+    margin-right: 20px;
+}
+
+.actions{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px 20px 20px;
+
+}
+
+.actions li {
+    padding: 0px 3px 0px 7px;  
+}
