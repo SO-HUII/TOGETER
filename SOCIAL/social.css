@@ -29,6 +29,7 @@
 
 body {
     font-family: 'netmarbleB';
+    background-color: var(--background-color);
 }
 
 ul {
@@ -49,6 +50,7 @@ button:focus {
     border: none;
     cursor: pointer;
     outline: none;
+    background-color:transparent;
 
 }
 
@@ -75,6 +77,85 @@ header .logo {
 .menu li{
     padding: 8px 12px;
 }
+
+
+/* Writing */
+
+.writing {
+    padding: 100px;
+    display: flex;
+    background-color: var(--background-color);
+    justify-content: space-between;
+    
+}
+
+.writing .writingImg img {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin: 20px;
+    flex:1;
+    box-sizing: border-box;
+}
+
+.writing .writingSpace {
+    width: 80%;
+    height: 170px;
+    background-color: var(--white-color);
+    flex:5;
+    box-sizing: border-box;
+}
+
+.writing button {
+    font-size: 17px;
+    flex: 0.3;
+    box-sizing: border-box;
+}
+
+
+/* Board */
+
+.board {
+    background-color: var(--light-purple-color);
+    height: 1000px;
+    width: 1300px;
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    padding: 30px; 
+}
+
+.board .boardTitle {
+    width: 80%;
+    height: 10%;
+    margin: 10px 10px 10px 60px;
+    background-color: var(--white-color);
+}
+
+.board .boardDateView {
+    margin: 50px 0px 10px 30px;
+}
+
+
+/* Subscribe */
+
+.Subscribe .SubscribeTitle {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.Subscribe .SubscribeImg {
+    margin-left: 80px;
+}
+
+.Subscribe img {
+    width: 140px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
 
 /* Copyright And SNS */
 
