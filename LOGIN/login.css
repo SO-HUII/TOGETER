@@ -86,11 +86,12 @@ header .logo {
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--light-purple-color);
+    margin-top: 60px;
     }
     
 .container {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     border-radius: 7px;
     z-index: 1;
     overflow: hidden;
@@ -130,10 +131,12 @@ form {
     height: 70px;
     background: var(--dark-purple-color);
     margin: 10px;
+    margin-bottom: 30px;
 }
     
 .input {
     position: relative;
+    margin: 10px;
 }
 
 .input input,
@@ -161,6 +164,7 @@ form {
     color: var(--white-color);
     text-transform: uppercase;
     border-radius: 30px;
+    margin: 20px;
 }
     
 .login-btn:focus,
@@ -174,7 +178,7 @@ form {
 
 .input label {
     position: absolute;
-    top: 28%;
+    top: 40%;
     left: 10px;
     font-size: 10px;
     transition: 0.2s;
@@ -191,6 +195,11 @@ form {
     transform: translateY(-25px);
     font-size: 10px;
     color: var(--dark-purple-color);
+    margin: -6px;
+}
+
+.idpsSearchJoin {
+    margin-top: 30px;
 }
 
 
@@ -200,6 +209,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
+    margin-top: 600px;
 }
 
 .copyright {
