@@ -37,16 +37,31 @@
             </div>
         </div>
         <div class="qa">
-            <div class="qaBoard"></div>
+            <div class="qaBoard">
+                <div class="qusetion">
+                    <div class="qcontent"></div>
+                    <div class="qid"></div>
+                    <div class="qdate"></div>
+                </div>
+                <div class="answer">
+                    <div class="ansre"></div>
+                    <div class="anscontent"></div>
+                    <div class="ansid">관리자</div>
+                    <div class="ansdate"></div>
+                </div>
+            </div>
         </div>
 
 
         <!-- Search -->
-        <div class="Search">
-            <div class="select"></div>
-            <input type="text">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button>글쓰기</button>
+        <div class="Search">    
+            <select class="select" name='select'>
+                <option value='title' selected>제목</option>
+                <option value='content'>내용</option>
+            </select>
+            <input type="text" class="text">
+            <button class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="writing">글쓰기</button>
         </div>
 
 

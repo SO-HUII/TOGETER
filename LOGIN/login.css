@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'netmarbleB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* Color */
+
+    --background-color: #F0F4F5;
+    --white-color: #ffffff;
+    --black-color: #140a00;
+    --light-black-color: #4E425C;
+    --blue-color: #7EA0E0;
+    --pink-color:#FDBCE1;
+    --grey-dark-color:#B0A8B9;
+    --grey-light-color: #D9D9D9;
+    --light-purple-color: #E1D2F2;
+    --dark-purple-color: #C8A0F5;
+    --brown-color: #B1895E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'netmarbleB';
+    background-color: var(--background-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey-light-color);
+}
+
+.LoginAndSignup a {
+    color: var(--black-color);
+}
+
+button,
+button:focus {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color:transparent;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px 8px 20px;
+    background-color: var(--background-color);
+    color: var(--black-color);
+}
+
+header .logo {
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li{
+    padding: 8px 12px;
+}
+
+
+/* Login */
+
+.main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--light-purple-color);
+    }
+    
+.container {
+    width: 400px;
+    height: 300px;
+    border-radius: 7px;
+    z-index: 1;
+    overflow: hidden;
+}
+    
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-purple-color);
+    justify-content: space-evenly;
+}
+
+.container a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--light-black-color);
+    font-size: 10px;
+    }
+    
+.container a:focus,
+.container a:hover {
+    color: var(--white-color);
+    /* font-weight: bold; */
+}
+
+.logintitle {
+    font-size: 20px;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 70px;
+    background: var(--dark-purple-color);
+    margin: 10px;
+}
+    
+.input {
+    position: relative;
+}
+
+.input input,
+.login-btn {
+    width: 260px;
+    height: 45px;
+    outline: none;
+    padding: 0 0.7rem;
+    border-radius: 3px;
+    transition: 0.2s;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.input input {
+    border: none;
+    border-bottom: 1px solid var(--light-black-color);
+}
+
+.login-btn {
+    border: none;
+    background: var(--dark-purple-color);
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+    
+.login-btn:focus,
+.login-btn:hover {
+    background: var(--white-color);
+    cursor: pointer;
+    color: var(--dark-purple-color);
+    text-transform: uppercase;
+    transition: ease-in-out 0.2s;
+}
+
+.input label {
+    position: absolute;
+    top: 28%;
+    left: 10px;
+    font-size: 10px;
+    transition: 0.2s;
+    font-weight: bold;
+    padding: 0 0.1rem;
+}
+    
+.input input:focus {
+    border-bottom: 1px solid var(--dark-purple-color);
+}
+    
+.input input:focus ~ label,
+.input input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 10px;
+    color: var(--dark-purple-color);
+}
+
+
+/* Copyright And SNS */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.copyright {
+    display: flex;
+    margin-right: 20px;
+}
+
+.actions{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 60px 20px 20px 20px;
+
+}
+
+.actions li {
+    padding: 0px 3px 0px 7px;  
+}
