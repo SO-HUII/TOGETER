@@ -29,6 +29,7 @@
 
 body {
     font-family: 'netmarbleB';
+    background-color: var(--background-color);
 }
 
 ul {
@@ -75,6 +76,58 @@ header .logo {
 .menu li{
     padding: 8px 12px;
 }
+
+
+/* Introduction */
+
+.lang {
+    display: flex;
+    background-color: var(--dark-purple-color);
+    color: var(--white-color);
+    width: 500px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eng {
+    width: 500px;
+    height: 150px;
+    padding: 10px;
+    color: var(--light-black-color);
+    background-color: var(--light-purple-color);
+    border-bottom: 1px solid var(--light-black-color);
+}
+
+.kor {
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    color: var(--light-black-color);
+    background-color: var(--light-purple-color);
+}
+
+.introicon {
+    color: var(--grey-dark-color);
+    padding-top: 5px;
+}
+
+.introicon i {
+    padding-left: 10px;
+}
+
+.what {
+    margin: 100px 0px 20px 200px;
+}
+
+.why {
+    margin: 0px 0px 0px 810px;
+}
+
+.joinus {
+    margin: 100px 0px 20px 200px;
+}
+
 
 /* Copyright And SNS */
 
