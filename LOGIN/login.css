@@ -41,6 +41,12 @@ a{
     color: var(--grey-light-color);
 }
 
+.menu a:hover {
+    color: var(--brown-color);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
 .LoginAndSignup a {
     color: var(--black-color);
 }
@@ -65,6 +71,10 @@ header {
 
 header .logo {
     font-size: 25px;
+}
+
+.logo a {
+    color: var(--black-color);
 }
 
 .menu {
