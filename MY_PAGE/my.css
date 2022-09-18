@@ -47,9 +47,7 @@ a{
     transition: ease-in-out 0.2s;
 }
 
-.menu p:nth-child(1) {color: var(--brown-color);}
-
-.LoginAndSignup a {
+.logo a {
     color: var(--black-color);
 }
 
@@ -58,8 +56,9 @@ button:focus {
     border: none;
     cursor: pointer;
     outline: none;
-
+    background-color:transparent;
 }
+
 
 /* Header */
 
@@ -67,7 +66,6 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 50px 20px 8px 20px;
-    background-color: var(--background-color);
     color: var(--black-color);
 }
 
@@ -89,59 +87,90 @@ header .logo {
     padding: 8px 12px;
 }
 
+.mypagejump img {
+    width: 50px;
+    height: auto;
+    border:1px solid var(--grey-dark-color);
+    border-radius: 100%;
+    padding: 0px;
+}
 
-/* Introduction */
 
-.lang {
+/* My Page */
+
+.profile {
     display: flex;
-    background-color: var(--dark-purple-color);
-    color: var(--white-color);
-    width: 500px;
+    position: relative;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.profile img {
+    width: 350px;
+    background-color: var(--black-color);
+    border-radius: 100%;
+}
+
+.profile button {
+    font-size: 30px;
+    color: var(--light-black-color);
+    z-index: 2;
+    margin-top: 290px;
+    margin-left: 240px;
+    position: absolute;
+    background-color: var(--white-color);
+    width: 50px;
     height: 50px;
-    justify-content: space-around;
-    align-items: center;
+    border-radius: 100%;
 }
 
-.eng {
-    width: 500px;
-    height: 150px;
-    padding: 10px;
+.myname {
+    display: flex;
+    justify-content: center;
     color: var(--light-black-color);
-    background-color: var(--light-purple-color);
-    border-bottom: 1px solid var(--light-black-color);
-    font-size: 20px;
+    margin-top: 30px;
 }
 
-.kor {
-    width: 500px;
-    height: 200px;
+.bio .Bio {
+    font-size: 27px;
+    margin-top: 40px;
+    margin-left: 250px;
+}
+
+.bio .bioexpla {
+    background-color: var(--white-color);
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 1000px;
     padding: 10px;
+}
+
+.bio .bioexpla p {
+    padding: 10px;
+}
+
+.bio button {
+    margin-left: 1235px;
+    margin-top: 5px;
+}
+
+.saveAndcancelBtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.saveAndcancelBtn button {
+    background-color: var(--grey-dark-color);
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    font-family: 'netmarbleB';
+    font-size: 12px;
     color: var(--light-black-color);
-    background-color: var(--light-purple-color);
-    font-size: 17px;
+    margin: 0px 50px 0px 50px;
 }
-
-.introicon {
-    color: var(--grey-dark-color);
-    padding-top: 5px;
-}
-
-.introicon i {
-    padding-left: 10px;
-}
-
-.what {
-    margin: 100px 0px 20px 200px;
-}
-
-.why {
-    margin: 0px 0px 0px 810px;
-}
-
-.joinus {
-    margin: 20px 0px 20px 200px;
-}
-
 
 /* Copyright And SNS */
 
@@ -154,6 +183,7 @@ footer {
 .copyright {
     display: flex;
     margin-right: 20px;
+    font-size: 13px;
 }
 
 .actions{ 
@@ -165,5 +195,6 @@ footer {
 }
 
 .actions li {
+    font-size: 13px;
     padding: 0px 3px 0px 7px;  
 }

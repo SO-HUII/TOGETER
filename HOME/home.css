@@ -70,7 +70,7 @@ button:focus {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;    
     padding: 50px 20px 8px 20px;
     color: var(--black-color);
 }
