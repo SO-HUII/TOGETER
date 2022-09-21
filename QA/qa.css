@@ -143,6 +143,16 @@ header .logo {
     margin:0 auto; 
     margin-top: 20px;
     margin-left: 170px;
+    padding-top: 20px;
+}
+
+.ansre {
+    width: 52px;
+    height: 21px;
+    background-color: var(--grey-light-color);
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
 }
 
 /* Search */
