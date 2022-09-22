@@ -54,10 +54,10 @@
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                     <p>언어선택</p>
                 </div>
-                <div class="transWrite"><input type="text"></div>
+                <div class="transWrite"><input type="text" id="myInput"></div>
                 <div class="introicon">
                     <i class="fa-solid fa-volume-high"></i>
-                    <i class="fa-regular fa-copy"></i>
+                    <button onclick="copy_to_clipboard()"><i class="fa-regular fa-copy"></i></button>
                 </div>
             </div>
 
@@ -79,8 +79,40 @@
         <div class="Community">
             <div class="CommunityTitle">Community</div>
             <div class="NewPost"><p class="newpost">new post</p></div>
+            
             <div class="communityText">
-                
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="slide03" class="left"></label>
+                                <img src="../HOME/image/slide01.PNG" alt="">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <img src="../HOME/image/slide02.PNG" alt="">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a>
+                                <label for="slide02" class="left"></label>
+                                <img src="../HOME/image/slide03.PNG" alt="">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -127,5 +159,15 @@
             <li><button><i class="fa-brands fa-facebook"></i></button></li>
         </ul>
     </footer>
+    
+    <!-- 복사 기능 -->
+    <script>
+        function copy_to_clipboard() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            document.execCommand("Copy");
+            console.log('Copied!');
+        }
+    </script>
 </body>
 </html>
